@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Site gulp</title>
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+	<button class="up-button">Нагору</button>
+
+
+	<div class="wrapper">
+		<main class="main-container">
+			<img src="./css/avatar.png" />
+			<article class="welcome-text">
+				<h2>Nice to meet you, dear guest!</h2>
+				<h3>My name is Vyacheslav Stolyarchuk</h3>
+				<h3>Welcome to my fast-made site for <a href="https://mate.academy/" target="_blank">mate-academy</a></h3
+			</article>
+		</main>
+		<section class="intro">
+			<h3 class="intro-header">
+				So, I made this site because I really want to be a full-stack JavaScript developer
+			</h3>
+			<p>In this project I use gulp<img src="./css/gulp-icon.png" alt="gulp" width="50" />, because later i can host it for free. Last time i wrote code on <img src="./css/react-icon.png" />React JS, but dont know how to host in on GitHub.</p>
+			<p>I'll try to write content-part of site on English language without google translate, while technical part of site will be on Ukrainian language</p>
+			<p>For the first example of my skills, I made this section with random background color. It will change in some time, if you want to clear interval - click the button in left corner, or change color by yourself with another button</p>
+			<button class="change-color">Змінити колір</button>
+			<button class="keep-color">Залишити колір</button>
+		</section>
+		<section class="form-section">
+			<h2>Forms and work with data</h2>
+			<form action="" method="get">
+			  <fieldset>
+			    <legend>Реєстрація нового користувача</legend>
+			    <label for="text-input">Ваше ім'я</label>
+			    <input type="text" name="text" id="text-input" value="Олексій">
+			    <label for="email-input">Ваша електронна адреса</label>
+			    <input type="email" name="email" id="email-input" value="alex2002@gmail.com">
+			    <label for="phone-input">Ваш номер телефону</label>
+			    <input type="tel" name="tel" id="phone-input" value="380737808070">
+			    <label for="password-input">Введіть пароль</label>
+			    <input type="password" name="password" id="password-input" value="most_secret">
+				<div class="checkbox-container">
+			    	<label for="checkbox">Хочу отримувати новини та пропозиції</label>
+			    	<input type="checkbox" name="checkbox" id="checkbox" checked>
+			    </div>
+
+			    <button type="submit" class="submit-btn">Реєстрація</button>
+			  </fieldset>
+			</form>
+		</section>
+		<section class="slider-section">
+			<p>Now i'll try to create slider with some picture and text content without npm-packages. Many time ago i did some similiar, but now I will try to remember that experience. Without google, of course</p>
+			<div class="slider-wrapper">
+				<div class="slider-line">
+					<div class="slide">
+						<h2 class="slide-title">First slide</h2>
+						<p>Let's use background-blend-mode and do our image teg some darker - think I am. But find one little problem - z-index don't work on image correctly. Bug or feature? Have no idea. But first i want to show you my other skills, maybe I'll go back for it later</p>
+						<img src="./css/slider/slide1.jpg" alt="slide" />
+					</div>
+					<div class="slide">
+						<h2 class="slide-title">Second slide</h2>
+						<p>New slide, new tasks. In ready-to-use sliders (like a Swiper.js or Slick.js), swipe event added to slider functional by default. But i want to try do it by myself, I think this experiense will so helpful for me on the start of my career</p>
+						<img src="./css/slider/slide2.jpg" alt="slide" />
+					</div>
+					<div class="slide">
+						<h2 class="slide-title">Third slide</h2>
+						<p>First bug that i don't expect. Text is over the 'slide' container, and i don't know why. Check what's going wrong...<br /><br />Found! I forgot to add class attribute to 'h2' header. Small problem, five minutes of wasted time. Also, problem with vertical scroll some slides has been fixed by overwlow-y property. Try to add padding to slides - text looking good, so pretty for now.</p>
+						<img src="./css/slider/slide3.png" alt="slide" />
+					</div>
+					<div class="slide">
+						<h2 class="slide-title">Fourth slide</h2>
+						<p>Another fact of my experiense in coding - i never used Bootstrap or Tailwind in my projects. Always write CSS code by zero to ready result. Hard way, i understand it. But in the future i will use some framework between this two, and understand how it works. Now I better add to the project some beautiful font. Ubuntu, why not? </p>
+						<img src="./css/slider/slide4.jpg" alt="slide" />
+					</div>
+					<div class="slide">
+						<h2 class="slide-title">Fifth slide</h2>
+						<p>Slide number five, i see new bug - in mobile version last slide larger than other slides. So, maybe slide-show ends here, in not-ready state. I necessarily go back to end it, but later, when show you my another skills</p>
+						<img src="./css/slider/slide5.jpg" alt="slide" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ecommerce">
+			<h2 class="ecommerce-title">And ecommerce page, important skills-case for every fullstack developer</h2>
+			<p>I don't forget how do it on vanilla JS, maybe. Without state, props, redux library and map method of arrays - but it's possible. I'll try to make it with localStorage instead of server</p>
+			<p>Something went wrong and my page by x-offset. It's not good, owerflow-x cannot help. But this site fast-made, like i said in begin, for present my main skills to Mate-academy, where i will learn correct methods to work in web-development. I hope, it will be :)</p>
+			<div class="cart-buttons">
+				<button class="show-cart">Показати кошик</button>
+				<button class="clear-cart">Очистити кошик</button>
+			</div>
+			<div class="ecommerce-wrapper">
+				<div class="ecommerce-item">
+					<img src="./css/img/lm1.jpg">
+					<div class="item-description">
+						<span class="item-name">Малина-Чорниця-Вишня</span>
+						<div class="price-container">
+							<span class="old-price">510 ₴</span>
+							<span class="item-price">420 ₴</span>
+						</div>
+						<button class="add-to-cart" data-goods="Малина-Чорниця-Вишня">У кошик</button>
+					</div>
+				</div>
+				<div class="ecommerce-item">
+					<img src="./css/img/lm2.jpg">
+					<div class="item-description">
+						<span class="item-name">Персик-Вишня-Лимонад</span>
+						<div class="price-container">
+							<span class="old-price">510 ₴</span>
+							<span class="item-price">420 ₴</span>
+						</div>
+						<button class="add-to-cart" data-goods="Персик-Вишня-Лимонад">У кошик</button>
+					</div>
+				</div>
+				<div class="ecommerce-item">
+					<img src="./css/img/lm3.jpg">
+					<div class="item-description">
+						<span class="item-name">Кокос-Ананас з льодом</span>
+						<div class="price-container">
+							<span class="old-price">510 ₴</span>
+							<span class="item-price">420 ₴</span>
+						</div>
+						<button class="add-to-cart" data-goods="Кокос-Ананас з льодом">У кошик</button>
+					</div>
+				</div>
+				<div class="ecommerce-item">
+					<img src="./css/img/lm4.jpg">
+					<div class="item-description">
+						<span class="item-name">Яблуко-Виноград з льодом</span>
+						<div class="price-container">
+							<span class="old-price">510 ₴</span>
+							<span class="item-price">420 ₴</span>
+						</div>
+						<button class="add-to-cart" data-goods="Яблуко-Виноград з льодом">У кошик</button>
+					</div>
+				</div>
+				<div class="ecommerce-item">
+					<img src="./css/img/lm5.jpg">
+					<div class="item-description">
+						<span class="item-name">Гуава-Манго-Маракуйя</span>
+						<div class="price-container">
+							<span class="old-price">510 ₴</span>
+							<span class="item-price">420 ₴</span>
+						</div>
+						<button class="add-to-cart" data-goods="Гуава-Манго-Маракуйя">У кошик</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript">
+
+	/* Секція з рандомним кольором */
+
+		let intro = document.querySelector('section.intro');
+		let colorBtn = document.querySelector('button.change-color');
+		let clearColorBtn = document.querySelector('button.keep-color');
+
+		function getRandomRGB() {
+			let randColor1 = Math.ceil(Math.random()*255);
+			let randColor2 = Math.ceil(Math.random()*255);
+			let randColor3 = Math.ceil(Math.random()*255);
+			intro.style.backgroundColor = `rgb(${randColor1}, ${randColor2}, ${randColor3})`;
+		}
+
+		let changeColor = setInterval(getRandomRGB, 5000);
+
+		colorBtn.addEventListener('click', getRandomRGB);
+
+		clearColorBtn.addEventListener('click', () => {
+			clearInterval(changeColor);
+			clearColorBtn.disabled = true;
+		})
+
+	/* Робота з формами */
+
+		let submitBtn = document.querySelector('button.submit-btn');
+		let form = document.querySelector('form');
+		submitBtn.addEventListener('click', (e) => {
+			let data = []
+			e.preventDefault();
+			for(let element of form.elements) {
+				data.push(element.value)
+			}
+			data = data.slice(1,5);
+			console.log(data)
+			alert(`Реєстрація успішна, ${data[0]}!\n
+				   Ваш логін: ${data[1]}\n
+				   Ваш телефон: ${data[2]}\n
+				   Ваш пароль: ${data[3]}`)
+		})
+
+	/* Налаштування слайдера на нативному JavaScript. Люті милиці та велосипеди. Сподіваюся цей код ніхто не побачить */
+
+
+
+	/* Налаштування кнопки повернення у початок сторінки */
+
+		let upBtn = document.querySelector('button.up-button');
+		window.addEventListener('scroll', () => {
+			window.pageYOffset < 1000 ? upBtn.style.opacity = 0 : upBtn.style.opacity = 1;
+		});
+		upBtn.addEventListener('click', () => {
+			window.scrollTo(0, 0);
+		})
+
+	/* Секція Інтернет-магазину */
+
+		let addButtons = document.querySelectorAll('button.add-to-cart');
+		addButtons.forEach(button => {
+			button.addEventListener('click', (e) => {
+				let data = localStorage.getItem(e.target.getAttribute('data-goods'));
+				if(!data) {
+					localStorage.setItem(e.target.getAttribute('data-goods'), 1);
+				} else {
+					localStorage.setItem(e.target.getAttribute('data-goods'), +data +1)
+				}
+			});
+		});
+
+		let clearCartBtn = document.querySelector('button.clear-cart');
+		let showCartBtn = document.querySelector('button.show-cart');
+
+		clearCartBtn.addEventListener('click', () => {
+			let cartClear = confirm('Кошик буде очищено. Бажаєте продовжити?');
+			if(cartClear) {
+				localStorage.clear();
+				alert('localStorage був очищений, тепер кошик порожній!')
+			} else {
+				alert('Кошик не було очищено, товари в ньому залишилися!')
+			}
+		});
+
+		showCartBtn.addEventListener('click', () => {
+			let goodsArr = ['Малина-Чорниця-Вишня', 'Персик-Вишня-Лимонад', 'Кокос-Ананас з льодом', 'Яблуко-Виноград з льодом', 'Гуава-Манго-Маракуйя'];
+			let countPrice = 0;
+			for(let item of goodsArr) {
+				localStorage.getItem(item);
+				if(typeof(localStorage.getItem(item)) == 'string') {
+					alert(`${item}: ${localStorage.getItem(item)} шт`);
+					countPrice += +localStorage.getItem(item) * 420;
+				} else {
+					alert(`${item}: відсутній у кошику`)
+				}
+			}
+			alert(`Загалом товарів у кошику на суму ${countPrice} ₴`);
+		})
+
+	</script>
+</body>
+</html>
+
+

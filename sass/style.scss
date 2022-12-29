@@ -1,0 +1,249 @@
+@font-face {
+	src: url('Ubuntu-Medium.ttf');
+	font-family: 'Ubuntu';
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	font-family: Ubuntu;
+	box-sizing: border-box;
+	font-size: calc(10px + 2vmin);
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+button.up-button {
+	position: fixed;
+	z-index: 100;
+	bottom: 20px;
+	right: 20px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 2px solid gold;
+	opacity: 0;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 150vh;
+	background: #282C34;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	text-align: center;
+	text-shadow: 3px 3px 3px black;
+	main.main-container {
+		width: 90%;
+		padding: 15px 30px;
+		border: 2px solid gold;
+		border-radius: 10px;
+		background: url('bg.jpg') no-repeat 50% 30%;
+		background-size: cover;
+		background-blend-mode: multiply;
+		background-color: rgba(0,0,0,0.5);
+		box-shadow: 0 0 30px 3px black inset;
+		margin: 20px auto 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		img {
+			border-radius: 50%;
+			margin-right: auto;
+			border: 2px solid gold;
+			max-width: 100%;
+			background-blend-mode: multiply;
+			background-color: rgba(0,0,0,0.5);
+		}
+		article.welcome-text {
+			padding: 20px;
+			width: 100%;
+			margin-left: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			h2 {
+				font-size: calc(20px + 2vmin);
+				border-bottom: 2px solid gold;
+				line-height: 110%;
+				padding-bottom: 10px;
+			}
+			h3 {
+				border-bottom: 2px solid gold;
+				font-size: calc(10px + 2vmin);
+				line-height: 40px;
+				a {
+					color: gold;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	section.intro {
+		width: 90%;
+		margin: 40px auto 0;
+		padding: 10px 10px 50px;
+		min-height: 40vh;
+		background-color: grey;
+		transition: 1s;
+		text-shadow: 0 0 3px black;
+		position: relative;
+		box-shadow: 0 0 40px 3px black inset;
+		border-radius: 10px;
+		button {
+			padding: 10px;
+			border-radius: 10px;
+			position: absolute;
+			bottom: 10px;
+			&.change-color {
+				right: 10px;
+			}
+			&.keep-color {
+				left: 10px;
+			}
+		}
+	}
+	section.form-section {
+		h2 {
+			padding: 20px 0;
+		}
+		form {
+			max-width: 700px;
+			margin: 20px auto;
+			background: url('formBg.jpg');
+			background-size: cover;
+			padding: 10px;
+			fieldset {
+				margin: auto;
+				padding: 10px;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				label {
+					padding: 10px 0;
+					text-align: left;
+					display: inline;
+				}
+				input[type="text"],
+				input[type="email"],
+				input[type="password"],
+				input[type="tel"] {
+					width: 100%;
+				}
+				div.checkbox-container {
+					display: flex;
+				}
+				button[type="submit"] {
+					margin: auto;
+				}
+			}
+		}
+	}
+	section.slider-section {
+		//width: 100%;
+		height: 100vh;
+		border: 5px solid gold;
+		padding: 20px;
+		.slider-wrapper {
+			min-height: 300px;
+			border: 2px solid red;
+			max-height: 70vh;
+			display: flex;
+			align-items: center;
+			padding: 20px;
+			.slider-line {
+				min-height: 60vh;
+				border: 2px solid white;
+				display: flex;
+				overflow-x: scroll;
+				overflow-y: hidden;
+				.slide {
+					width: 100%;
+					border: 2px solid black;
+					display: flex;
+					align-items: center;
+					position: relative;
+					z-index: 10;
+					background-color: rgba(0,255,0,0.1);
+					h2.slide-title {
+						position: absolute;
+						top: 10px;
+						left: 10px;
+						font-size: 4vmin;
+						z-index: 22;
+					}
+					p {
+						padding: 20px;
+						position: absolute;
+					}					
+					img {
+						max-height: 65vh;
+					}
+				}
+			}
+		}
+	}
+	section.ecommerce {
+		width: 100%;
+		margin-top: 20px;
+		border: 5px solid orangered;
+		padding: 0 5%;
+		div.cart-buttons {
+			width: 100%;
+			height: 60px;
+			border: 2px solid gold;
+			margin: 10px 0;
+			display: flex;
+			button {
+				width: 50%;
+			}
+		}
+		div.ecommerce-wrapper {
+			width: 100%;
+			min-height: 40vh;
+			border: 2px solid white;
+			display: grid;
+			gap: 10px;
+			padding: 10px;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			.ecommerce-item {
+				min-height: 200px;
+				//border: 2px solid red;
+				img {
+					max-width: 100%;
+				}
+				.item-description {
+					display: flex;
+					flex-direction: column;
+					padding: 10px;
+					text-align: left;
+					span.item-name {
+						min-height: 90px;
+					}
+					div.price-container {
+						margin: 10px 0;
+						display: flex;
+						justify-content: space-between;
+						span {
+							&.old-price {
+								text-decoration: line-through;
+								font-size: 24px;
+								color: grey;
+							}
+							&.item-price {
+								color: gold;
+								font-size: 30px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
